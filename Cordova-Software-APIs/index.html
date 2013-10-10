@@ -36,6 +36,7 @@ under the License.-->
         <script src="js/app/notifications.js"></script>
         <script src="js/app/device.js"></script>
         <script src="js/app/connection.js"></script>
+        <script src="js/app/camera.js"></script>
         <script src="js/index.js"></script>
         <title>Hello World</title>
     </head>
@@ -144,7 +145,10 @@ under the License.-->
                 </tr>
             </table>
         </div>
-        <div id="capture-view" data-id="capture-view" data-role="view" data-layout="api-layout" data-title="Capture API">
+        <div id="capture-view" data-id="capture-view" data-role="view" data-layout="api-layout" data-title="Capture API"
+            data-show="app.pictures.init">
+            <button data-role="touch" data-tap="app.pictures.get">Capture Photo</button> <br>
+            <img style="display:block;margin:5px auto; width:120px; height:120px;" id="smallImage" src="#" />
         </div>
         <div id="connection-view" data-id="connection-view" data-role="view" data-layout="api-layout" data-title="Connection API"
             data-show="app.connectionApi.init" data-hide="app.connectionApi.close">
