@@ -38,6 +38,8 @@ under the License.-->
         <script src="js/app/connection.js"></script>
         <script src="js/app/camera.js"></script>
         <script src="js/app/contacts.js"></script>
+        <script src="js/app/events.js"></script>
+        <script src="js/app/media.js"></script>
         <script src="js/index.js"></script>
         <title>Hello World</title>
     </head>
@@ -162,6 +164,7 @@ under the License.-->
             <a data-role="touch" data-tap="app.contactsApi.create">Create</a>
         </div>
         <div id="events-view" data-id="events-view" data-role="view" data-layout="api-layout" data-title="Events API">
+            
         </div>
         <div id="file-system-view" data-id="file-system-view" data-role="view" data-layout="api-layout" data-title="File system API">
         </div>
@@ -170,6 +173,9 @@ under the License.-->
         <div id="InAppBrowser-view" data-id="InAppBrowser-view" data-role="view" data-layout="api-layout" data-title="InAppBrowser API">
         </div>
         <div id="media-view" data-id="media-view" data-role="view" data-layout="api-layout" data-title="Media API">
+            <button data-role="touch" data-tap="app.audio.play">Play</button> <br>
+            <button data-role="touch" data-tap="app.audio.pause">Pause</button> <br>
+            <button data-role="touch" data-tap="app.audio.stop">Stop</button> <br>
         </div>
         <div id="storage-view" data-id="storage-view" data-role="view" data-layout="api-layout" data-title="Storage API">
         </div>
